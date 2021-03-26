@@ -49,7 +49,7 @@ stages:
       displayName: "Install requirements"
       
     - script: |
-        PATH=$PATH:~/.local/lib/python3.7/bin
+        export PATH=$PATH:~/.local/lib/python3.7/bin
         python -m venv antenv
         source antenv/bin/activate
         make install
