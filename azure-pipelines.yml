@@ -9,6 +9,7 @@ trigger:
 variables:
   # Azure Resource Manager connection created during pipeline creation
   azureServiceConnectionId: '4a8ab278-84ec-41ec-8140-a4f0ecec5112'
+  
 
   # Web app name
   webAppName: 'ml-flask-deploy'
@@ -48,9 +49,9 @@ stages:
       displayName: "Install requirements"
       
     - script: |
+        PATH=$PATH:~/.local/lib/python3.7/bin
         python -m venv antenv
         source antenv/bin/activate
-        export PATH=$PATH:~/.local/lib/python3.7/bin
         make install
         make lint
       workingDirectory: $(projectRoot)
