@@ -50,7 +50,7 @@ stages:
     - script: |
         python -m venv antenv
         source antenv/bin/activate
-        export PATH=$PATH:~/.local/lib/python3.7/bi
+        export PATH=$PATH:~/.local/lib/python3.7/bin
         make install
         make lint
       workingDirectory: $(projectRoot)
