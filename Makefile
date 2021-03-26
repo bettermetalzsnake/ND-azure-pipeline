@@ -16,6 +16,7 @@ lint:
 	#cd ~/.local/lib/python3.7/bin
 	#pip install virtualenv
 	#source virtualenv/bin/activate
+	cd ~/.virtualenv
 	pylint --disable=R,C,W1203 app.py
 
 all: install lint test
