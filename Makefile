@@ -14,8 +14,6 @@ test:
 lint:
 	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
 	#cd ~/.local/lib/python3.7/bin
-	SHELL := /bin/bash
-	rule:
-	source env.sh && pylint --disable=R,C,W1203 app.py
+	pylint --disable=R,C,W1203 app.py
 
 all: install lint test
