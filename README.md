@@ -1,12 +1,12 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+This project will deploy a python Machine Learning application using the Flask Web framework. It will use make to install the dependencies and also lint your code.
 
 ## Project Plan
 <TODO: Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* Trello board - https://trello.com/b/ukOVWEC5/nano-degree
+* https://github.com/bettermetalzsnake/ND-azure-pipeline/blob/main/azure%20ND%20template.xlsx
 
 ## Instructions
 
