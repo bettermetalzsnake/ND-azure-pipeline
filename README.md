@@ -3,21 +3,25 @@
 This project will deploy a python Machine Learning application using the Flask Web framework. It will use make to install the dependencies and also lint your code.
 
 ## Project Plan
-<TODO: Project Plan
 
 * Trello board - https://trello.com/b/ukOVWEC5/nano-degree
 * https://github.com/bettermetalzsnake/ND-azure-pipeline/blob/main/azure%20ND%20template.xlsx
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+ * Architecture Diagram  https://github.com/bettermetalzsnake/ND-azure-pipeline/blob/main/Azure%20Architecture.png
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
-* Project running on Azure App Service
+* Fork or clone this repo over to your own.
+* Log into your Azure account and launch the Azure cloudshell.
+* set up your ssh keys in Azure and add them to github. (https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops)
+* Clone your project into Azure Cloud Shell (https://github.com/bettermetalzsnake/ND-Final_Project/blob/main/Git%20clone%20to%20Azure%20cloudshell.png)
+* run the Makefile to install all the dependencies needed. Command will be `Make All`
+* after it completes you should see output similar to this. (. You will need to create a python virtual environment or your Makefile will not complete with an error run error stating that `pylint command not found`. Please use these commands `python3 -m venv ~/.your_repo_name` and `source ~/.ND-Final_Project/bin/activate` you may also need to export your path to run the makefile, use this command `export PATH=$PATH:/home/<user>/.local/lib/python3.7/bin`
+* Azure App Service
 
-* Project cloned into Azure Cloud Shell
+* 
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
