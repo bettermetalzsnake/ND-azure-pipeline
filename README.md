@@ -20,7 +20,7 @@ This project will deploy a python Machine Learning application using the Flask W
 * after it completes you should see output similar to this. (https://github.com/bettermetalzsnake/ND-Final_Project/blob/main/succesful%20pylint.png) 
 * you can now deploy the web app service using the Azure cli - `az webapp up -n nameofwebsite` After its created you can see the website on the URL that is generated after it succesfully deploys.
 
-##Deploy this project using Azure pipeline##
+## Deploy this project using Azure pipeline
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
